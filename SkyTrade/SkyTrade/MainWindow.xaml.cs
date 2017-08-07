@@ -20,8 +20,11 @@ namespace SkyTrade
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainWindowViewModel _viewModel;
         public MainWindow()
         {
+            _viewModel = new MainWindowViewModel();
+            this.DataContext = _viewModel;
             InitializeComponent();
         }
     }

@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SkyTrade"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="SkyTrade" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="15"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Name="txtProgramStatus" HorizontalAlignment="Stretch" Height="15" Text="{Binding SystemStatus}" Grid.Row="1" Grid.Column="0" FontSize="10" FontFamily="Consolas" Padding="6,0,0,0"></TextBlock>
     </Grid>
 </Window>
